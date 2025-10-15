@@ -34,3 +34,15 @@ It’s designed to demonstrate the full ML lifecycle:
 ```bash
 git clone https://github.com/Ajyupdate/customer-churn.git
 cd customer-churn
+
+python -m venv venv
+venv\Scripts\activate   # For Windows
+# or
+source venv/bin/activate   # For macOS/Linux
+
+
+pip install -r requirements.txt
+
+uvicorn app:app --reload
+
+
